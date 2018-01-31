@@ -1,0 +1,35 @@
+.header{
+    width: 100%;
+    
+}
+
+font{
+    font-family: "chunk",serif;
+    font-style: normal;
+    font-weight: 400;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    left: 50%;
+    position: absolute;
+    margin-left: -300px;
+
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: inline-flex;
+    color:#D85A93;
+    font-size: 200%;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "chunk",serif;
+}
+.image{
+    margin-top: 100px;
+    width: 50%
+}
