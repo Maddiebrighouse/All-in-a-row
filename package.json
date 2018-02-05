@@ -18,7 +18,7 @@
       "env",
       "react"
     ]
-},
+  },
   "homepage": "https://github.com/Maddiebrighouse/All-in-a-row#readme",
   "dependencies": {
     "express": "^4.16.2",
@@ -31,6 +31,7 @@
     "bable-loader": "^0.0.1-security",
     "nodemon": "^1.14.11",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
   }
 }
