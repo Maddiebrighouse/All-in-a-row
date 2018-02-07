@@ -3,14 +3,8 @@
     
 }
 .container{
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; 
-    width: 900px;
-    box-sizing: border-box;
-    flex-wrap: wrap; */
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 800px;
 }
 
 font{
@@ -59,6 +53,9 @@ img{
 hr{
     border-color: #0000001a;
     width: 100%;
+    margin-bottom: 50px;
+	margin-top: 10px;
+
 }
 .socialbuttoms {
     margin: 0 auto;
@@ -74,6 +71,26 @@ hr{
 }
 h1{
     font-family: "chunk",serif;
-    color:#D85A93;
+    color:#df6b41;
     font-size: -webkit-xxx-large;
+    margin-bottom: 0px;
+
+}
+p, time, span, h3{
+    font-family: 'Dosis', sans-serif;
+    color: rgba(145,145,145,1);
+    size: 16px;
+}
+.postfooter {
+    position: relative;
+}
+.nextbutton {
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+}
+.previousbutton {
+    position: absolute;
+    left: 10px;
+    font-size: 25px;
 }

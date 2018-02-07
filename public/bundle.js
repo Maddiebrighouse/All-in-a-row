@@ -18322,7 +18322,7 @@ var App = function (_React$Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'header' },
-                    _react2.default.createElement('img', { className: 'header', src: '/images/All-in-a-row-header.jpg', alt: 'Header Banner' })
+                    _react2.default.createElement('img', { className: 'header', src: '/images/All-in-a-row-header-2.jpg', alt: 'Header Banner' })
                 ),
                 _react2.default.createElement(_Navagation2.default, null),
                 _react2.default.createElement(_Post2.default, null),
@@ -18543,13 +18543,13 @@ var Post = function Post() {
                 _react2.default.createElement('hr', null),
                 _react2.default.createElement(
                     'a',
-                    { href: '/' },
-                    'next post'
+                    { className: 'nextbutton', href: '/' },
+                    'Newer Post'
                 ),
                 _react2.default.createElement(
                     'a',
-                    { href: '/' },
-                    'past post'
+                    { className: 'previousbutton', href: '/' },
+                    'Older Post'
                 ),
                 _react2.default.createElement('hr', null)
             )

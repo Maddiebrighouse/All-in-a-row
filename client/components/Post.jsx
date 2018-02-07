@@ -26,8 +26,8 @@ const Post = () => {
                 <a href="/">Share/Might be button</a>
                 <div className='postfooter'>
                     <hr></hr>
-                    <a href="/">next post</a>
-                    <a href="/">past post</a>
+                    <a className='nextbutton'href="/">Newer Post</a>
+                    <a className='previousbutton'href="/">Older Post</a>
                     <hr></hr>
                 </div>
             </div>

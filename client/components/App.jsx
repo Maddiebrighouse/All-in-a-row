@@ -10,7 +10,7 @@ class App extends React.Component {
         return (
                 <div>
                     <div className='header'>
-                        <img className="header" src="/images/All-in-a-row-header.jpg" alt="Header Banner"/>
+                        <img className="header" src="/images/All-in-a-row-header-2.jpg" alt="Header Banner"/>
                 </div>
                 <FixedNavagation />
                 <Post />
