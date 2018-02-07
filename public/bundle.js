@@ -18291,6 +18291,10 @@ var _Footer = __webpack_require__(29);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
+var _Post = __webpack_require__(30);
+
+var _Post2 = _interopRequireDefault(_Post);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -18315,8 +18319,13 @@ var App = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 null,
+                _react2.default.createElement(
+                    'div',
+                    { className: 'header' },
+                    _react2.default.createElement('img', { className: 'header', src: '/images/All-in-a-row-header.jpg', alt: 'Header Banner' })
+                ),
                 _react2.default.createElement(_Navagation2.default, null),
-                _react2.default.createElement(Post, null),
+                _react2.default.createElement(_Post2.default, null),
                 _react2.default.createElement(_Footer2.default, null)
             );
         }
@@ -18457,6 +18466,98 @@ var Footer = function Footer() {
 };
 
 exports.default = Footer;
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Post = function Post() {
+    return _react2.default.createElement(
+        'div',
+        { className: 'container' },
+        _react2.default.createElement(
+            'div',
+            { className: 'postheader' },
+            _react2.default.createElement(
+                'h1',
+                null,
+                'Header'
+            ),
+            _react2.default.createElement(
+                'time',
+                { dateTime: '2018-02-4' },
+                'date publicshed'
+            ),
+            _react2.default.createElement('hr', null)
+        ),
+        _react2.default.createElement(
+            'div',
+            { className: 'postbody' },
+            _react2.default.createElement('img', { src: 'https://static1.squarespace.com/static/53608f78e4b0f06595c2c1ba/t/59f3928027ef2ddff5c3ebd9/1509135066024/INSTAPHOTOGSFW-2.jpg?format=original',
+                alt: 'photo of madeleine' }),
+            _react2.default.createElement(
+                'p',
+                null,
+                'Stuff and content. With some links to designers and other shit.'
+            ),
+            _react2.default.createElement('img', { src: 'http://res.cloudinary.com/all-in-a-row/image/upload/v1517462779/IMG_2747_qohud8.jpg', alt: 'Photo of me' }),
+            _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'some more text linked to the picture.'
+                )
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: 'tags' },
+                _react2.default.createElement(
+                    'span',
+                    null,
+                    'Tags will go here'
+                )
+            ),
+            _react2.default.createElement(
+                'a',
+                { href: '/' },
+                'Share/Might be button'
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: 'postfooter' },
+                _react2.default.createElement('hr', null),
+                _react2.default.createElement(
+                    'a',
+                    { href: '/' },
+                    'next post'
+                ),
+                _react2.default.createElement(
+                    'a',
+                    { href: '/' },
+                    'past post'
+                ),
+                _react2.default.createElement('hr', null)
+            )
+        )
+    );
+};
+
+exports.default = Post;
 
 /***/ })
 /******/ ]);

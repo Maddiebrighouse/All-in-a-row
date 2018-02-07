@@ -4,8 +4,8 @@ const Post = () => {
     return (
         <div className='container'>
             <div className='postheader'>
-                <h2>Header</h2>
-                <time datetime="2018-02-4">date publicshed</time>
+                <h1>Header</h1>
+                <time dateTime="2018-02-4">date publicshed</time>
                 <hr></hr>
             </div>
             <div className='postbody'>
