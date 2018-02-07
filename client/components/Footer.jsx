@@ -6,10 +6,11 @@ const Footer = () => {
             <hr></hr>
             <h3>Images by ...// copy rights and shit</h3>
             <div className='socialbuttoms'>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-pinterest-p"></i> 
-                <i class="fab fa-spotify"></i>
+                <a href="https://www.instagram.com/madeleinebrighouse/"><img src="/images/instagram-icon.png" alt="Instagram link"/></a>
+                <a href="https://www.facebook.com/Madeleinebrighouse/"><img src="/images/facebook-icon.png" alt="Facebook link"/></a>
+                <a href="https://www.pinterest.nz/madeleinebrighouse/"><img src="/images/pinterest-icon.png" alt="Pinterest link"/></a>
+                <a href="https://open.spotify.com/user/maddiebrighouse"><img src="/images/spotify.png" alt="Spotify link"/></a>
+
 
             </div>
         </div>

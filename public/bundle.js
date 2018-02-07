@@ -18316,6 +18316,7 @@ var App = function (_React$Component) {
                 'div',
                 null,
                 _react2.default.createElement(_Navagation2.default, null),
+                _react2.default.createElement(Post, null),
                 _react2.default.createElement(_Footer2.default, null)
             );
         }
@@ -18431,10 +18432,26 @@ var Footer = function Footer() {
         _react2.default.createElement(
             'div',
             { className: 'socialbuttoms' },
-            _react2.default.createElement('i', { 'class': 'fab fa-instagram' }),
-            _react2.default.createElement('i', { 'class': 'fab fa-facebook-f' }),
-            _react2.default.createElement('i', { 'class': 'fab fa-pinterest-p' }),
-            _react2.default.createElement('i', { 'class': 'fab fa-spotify' })
+            _react2.default.createElement(
+                'a',
+                { href: 'https://www.instagram.com/madeleinebrighouse/' },
+                _react2.default.createElement('img', { src: '/images/instagram-icon.png', alt: 'Instagram link' })
+            ),
+            _react2.default.createElement(
+                'a',
+                { href: 'https://www.facebook.com/Madeleinebrighouse/' },
+                _react2.default.createElement('img', { src: '/images/facebook-icon.png', alt: 'Facebook link' })
+            ),
+            _react2.default.createElement(
+                'a',
+                { href: 'https://www.pinterest.nz/madeleinebrighouse/' },
+                _react2.default.createElement('img', { src: '/images/pinterest-icon.png', alt: 'Pinterest link' })
+            ),
+            _react2.default.createElement(
+                'a',
+                { href: 'https://open.spotify.com/user/maddiebrighouse' },
+                _react2.default.createElement('img', { src: '/images/spotify.png', alt: 'Spotify link' })
+            )
         )
     );
 };
