@@ -24,18 +24,25 @@ font{
     display: inline;
 
 }
+.navigation > ul > li > a, .nextbutton, .previousbutton, .sharebutton{
+    display: inline-flex;
+    color:#D85A93;
+    font-size: 200%;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "chunk",serif; 
+}
 ul {
     list-style-type: none;
     
 }
 
 a {
-    display: inline-flex;
-    color:#D85A93;
-    font-size: 200%;
-    padding: 14px 16px;
     text-decoration: none;
-    font-family: "chunk",serif;
+}
+p > a{
+    color: #D85A93;
+    padding: 0%;
 }
 img{
     max-width:100%;
@@ -62,6 +69,7 @@ hr{
     text-align: center;
 }
 .socialbuttoms > a {
+    display: inline-flex;
     padding: 0%;
 
 }
@@ -79,7 +87,7 @@ h1{
 p, time, span, h3{
     font-family: 'Dosis', sans-serif;
     color: rgba(145,145,145,1);
-    size: 16px;
+    font-size: 20px;
 }
 .postfooter {
     position: relative;
@@ -93,4 +101,20 @@ p, time, span, h3{
     position: absolute;
     left: 10px;
     font-size: 25px;
+}
+.indexcontainer{
+    margin: 0% auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.postcontainer{
+	width: 300px;
+	height: 300px;
+    margin: 5px;
+}
+::selection { 
+    background-color:#df6b41be; 
+    color: white;
 }

@@ -5,7 +5,7 @@ const Post = () => {
         <div className='container'>
             <div className='postheader'>
                 <h1>Header</h1>
-                <time dateTime="2018-02-4">date publicshed</time>
+                <time dateTime="2018-02-4">February 9, 2018</time> 
                 <hr></hr>
             </div>
             <div className='postbody'>
@@ -18,12 +18,13 @@ const Post = () => {
                 <div>
                     <p>
                         some more text linked to the picture.
+                        <a href="/">styling this link</a>
                     </p>
                 </div>
                 <div className='tags'>
                     <span>Tags will go here</span>
                 </div>
-                <a href="/">Share/Might be button</a>
+                <a className='sharebutton' href="/">Share/Might be button</a>
                 <div className='postfooter'>
                     <hr></hr>
                     <a className='nextbutton'href="/">Newer Post</a>

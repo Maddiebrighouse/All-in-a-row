@@ -5,19 +5,19 @@ const FixedNavagation = () => {
         <div className='navigation' >
         <ul>
             <li>
-                <a href="/">Fashion</a>
+                <a href="#/index">Fashion</a>
             </li>
             <li>
-                <a href="/">Music</a>
+                <a href="#/index">Music</a>
             </li>
             <li>
-                <a href="/">Art</a>
+                <a href="#/index">Art</a>
             </li>
             <li>
-                <a href="/">People</a>
+                <a href="#/index">People</a>
             </li>
             <li>
-                <a href="/">About</a>
+                <a href="#/about">About</a>
             </li>
         </ul>
 </div >
