@@ -1,11 +1,12 @@
 import React from 'react'
-import {HashRouter as Router, Route} from 'react-router-dom'
+import { HashRouter as Router, Route } from 'react-router-dom'
 
 import FixedNavagation from './Navagation'
 import Footer from './Footer'
 import Post from './Post'
 import Index from './Index'
 import About from './About'
+import Login from './Login'
 
 class App extends React.Component {
     render() {
@@ -15,13 +16,14 @@ class App extends React.Component {
                 <div>
                     <div className='header'>
                         <a href="/">
-                            <img className="header" src="/images/All-in-a-row-header-2.jpg" alt="Header Banner"/>
+                            <img className="header" src="/images/All-in-a-row-header-2.jpg" alt="Header Banner" />
                         </a>
                     </div>
                     <FixedNavagation />
-                    <Route path='/index' component={Index}/>
+                    <Route path='/index' component={Index} />
                     <Route exact path='/' component={Post} />
-                    <Route path='/about' component={About}/>
+                    <Route path='/about' component={About} />
+                    <Route exact path='/login' component={Login} />
                     <Footer />
                 </div>
             </Router>

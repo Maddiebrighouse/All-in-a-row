@@ -118,3 +118,7 @@ p, time, span, h3{
     background-color:#df6b41be; 
     color: white;
 }
+
+.login {
+    text-align: center;
+}
