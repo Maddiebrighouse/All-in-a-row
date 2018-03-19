@@ -7,7 +7,7 @@ const db = require('../db.js')
 router.get('/posts', (req, res) => {
   db.getPosts()
     .then(posts => {
-      res.json({posts})
+      res.render('index', {posts})
     }
     )
     .catch(err => {
@@ -17,7 +17,7 @@ router.get('/posts', (req, res) => {
 
 router.get('/posts/:id', (req, res) => {
   db.getPost(req.params.id)
-    .then(post => res.json({post}))
+    .then(post => res.render({post}))
     .catch(err => {
       res.status(500).send('DATABASE ERROR: ' + err.message)
     })
