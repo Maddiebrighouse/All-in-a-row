@@ -6,6 +6,9 @@ module.exports = {
     client: 'sqlite3',
     connection: {
       filename: './dev.sqlite3'
+    }, 
+    migrations: {
+      directory: './data/migrations'
     },
     useNullAsDefault: true
   },
@@ -45,10 +48,10 @@ module.exports = {
       connection: {
         filename: ':memory:'
       },
-      seeds: {
-        directory: './tests/seeds'
-      }
+      useNullAsDefault: true
+  },
+    seeds: {
+      directory: './tests/seeds'
     }
   }
-
-};
+}
