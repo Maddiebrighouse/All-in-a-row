@@ -23673,89 +23673,115 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Post = function Post() {
-    return _react2.default.createElement(
-        'div',
-        { className: 'container' },
-        _react2.default.createElement(
-            'div',
-            { className: 'postheader' },
-            _react2.default.createElement(
-                'h1',
-                null,
-                'Header'
-            ),
-            _react2.default.createElement(
-                'time',
-                { dateTime: '2018-02-4' },
-                'February 9, 2018'
-            ),
-            _react2.default.createElement('hr', null)
-        ),
-        _react2.default.createElement(
-            'div',
-            { className: 'postbody' },
-            _react2.default.createElement('img', { src: 'https://static1.squarespace.com/static/53608f78e4b0f06595c2c1ba/t/59f3928027ef2ddff5c3ebd9/1509135066024/INSTAPHOTOGSFW-2.jpg?format=original',
-                alt: 'photo of madeleine' }),
-            _react2.default.createElement(
-                'p',
-                null,
-                'Stuff and content. With some links to designers and other shit.'
-            ),
-            _react2.default.createElement('img', { src: 'http://res.cloudinary.com/all-in-a-row/image/upload/v1517462779/IMG_2747_qohud8.jpg', alt: 'Photo of me' }),
-            _react2.default.createElement(
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Post = function (_React$Component) {
+    _inherits(Post, _React$Component);
+
+    function Post() {
+        _classCallCheck(this, Post);
+
+        var _this = _possibleConstructorReturn(this, (Post.__proto__ || Object.getPrototypeOf(Post)).call(this));
+
+        _this.state = {};
+        return _this;
+    }
+
+    _createClass(Post, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
                 'div',
-                null,
+                { className: 'container' },
                 _react2.default.createElement(
-                    'p',
-                    null,
-                    'some more text linked to the picture.',
+                    'div',
+                    { className: 'postheader' },
+                    _react2.default.createElement(
+                        'h1',
+                        null,
+                        'Header'
+                    ),
+                    _react2.default.createElement(
+                        'time',
+                        { dateTime: '2018-02-4' },
+                        'February 9, 2018'
+                    ),
+                    _react2.default.createElement('hr', null)
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'postbody' },
+                    _react2.default.createElement('img', { src: 'https://static1.squarespace.com/static/53608f78e4b0f06595c2c1ba/t/59f3928027ef2ddff5c3ebd9/1509135066024/INSTAPHOTOGSFW-2.jpg?format=original',
+                        alt: 'photo of madeleine' }),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        'Stuff and content. With some links to designers and other shit.'
+                    ),
+                    _react2.default.createElement('img', { src: 'http://res.cloudinary.com/all-in-a-row/image/upload/v1517462779/IMG_2747_qohud8.jpg', alt: 'Photo of me' }),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'some more text linked to the picture.',
+                            _react2.default.createElement(
+                                'a',
+                                { href: '/' },
+                                'styling this link'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'tags' },
+                        _react2.default.createElement(
+                            'span',
+                            null,
+                            'Tags will go here'
+                        )
+                    ),
                     _react2.default.createElement(
                         'a',
-                        { href: '/' },
-                        'styling this link'
+                        { className: 'sharebutton', href: '/' },
+                        'Share/Might be button'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'postfooter' },
+                        _react2.default.createElement('hr', null),
+                        _react2.default.createElement(
+                            'a',
+                            { className: 'nextbutton', href: '/' },
+                            'Newer Post'
+                        ),
+                        _react2.default.createElement(
+                            'a',
+                            { className: 'previousbutton', href: '/' },
+                            'Older Post'
+                        ),
+                        _react2.default.createElement('hr', null)
                     )
                 )
-            ),
-            _react2.default.createElement(
-                'div',
-                { className: 'tags' },
-                _react2.default.createElement(
-                    'span',
-                    null,
-                    'Tags will go here'
-                )
-            ),
-            _react2.default.createElement(
-                'a',
-                { className: 'sharebutton', href: '/' },
-                'Share/Might be button'
-            ),
-            _react2.default.createElement(
-                'div',
-                { className: 'postfooter' },
-                _react2.default.createElement('hr', null),
-                _react2.default.createElement(
-                    'a',
-                    { className: 'nextbutton', href: '/' },
-                    'Newer Post'
-                ),
-                _react2.default.createElement(
-                    'a',
-                    { className: 'previousbutton', href: '/' },
-                    'Older Post'
-                ),
-                _react2.default.createElement('hr', null)
-            )
-        )
-    );
-};
+            );
+        }
+    }]);
+
+    return Post;
+}(_react2.default.Component);
 
 exports.default = Post;
 
