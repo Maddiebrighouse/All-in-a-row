@@ -6,7 +6,15 @@ class Post extends React.Component {
         super()
         this.state = {}
     }
-
+    //   componentDidMount () {
+    //     request
+    //       .get(`api/v1/posts/${this.props.match.params.id}`)
+    //       .then(res => {
+    //         this.setState({
+    //           post: res.body
+    //         })
+    //       })
+    //   }
     render() {
         return (
             <div className='container'>

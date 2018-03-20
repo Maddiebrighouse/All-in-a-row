@@ -4,7 +4,7 @@ const router = express.Router()
 const db = require('../db.js')
 
 // get all posts
-router.get('/posts', (req, res) => {
+router.get('/index', (req, res) => {
   db.getPosts()
     .then(posts => {
       res.render('index', {posts})
@@ -16,11 +16,11 @@ router.get('/posts', (req, res) => {
 })
 
 router.get('/posts/:id', (req, res) => {
-  db.getPost(req.params.id)
-    .then(post => res.render({post}))
-    .catch(err => {
-      res.status(500).send('DATABASE ERROR: ' + err.message)
-    })
-})
+    db.getMongoPost(req.params.id)
+      .then(post => res.json({post}))
+      .catch(err => {
+        res.status(500).send('DATABASE ERROR: ' + err.message)
+      })
+  })
 
 module.exports = router

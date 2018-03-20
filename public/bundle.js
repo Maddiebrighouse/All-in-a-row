@@ -23698,6 +23698,16 @@ var Post = function (_React$Component) {
         _this.state = {};
         return _this;
     }
+    //   componentDidMount () {
+    //     request
+    //       .get(`api/v1/posts/${this.props.match.params.id}`)
+    //       .then(res => {
+    //         this.setState({
+    //           post: res.body
+    //         })
+    //       })
+    //   }
+
 
     _createClass(Post, [{
         key: 'render',
@@ -23816,12 +23826,12 @@ var NavIndex = function NavIndex() {
                 _react2.default.createElement(
                     'h1',
                     null,
-                    'Index'
+                    title
                 ),
                 _react2.default.createElement(
                     'time',
-                    { dateTime: '2018-02-4' },
-                    'date publicshed'
+                    { dateTime: date },
+                    date
                 )
             )
         ),
