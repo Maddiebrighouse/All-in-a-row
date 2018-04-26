@@ -1,0 +1,12 @@
+.indexcontainer{
+    margin: 0% auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.postcontainer{
+	width: 300px;
+	height: 300px;
+    margin: 5px;
+}

@@ -1,0 +1,20 @@
+.navigation{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+.navigation > ul{
+    padding-left: 0px;
+}
+.navigation > ul > li{
+    display: inline;
+
+}
+.navigation > ul > li > a, .nextbutton, .previousbutton, .sharebutton{
+    display: inline-flex;
+    color:#D85A93;
+    font-size: 200%;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "chunk",serif; 
+}

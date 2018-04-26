@@ -1,12 +1,12 @@
 import React from 'react'
 import { HashRouter as Router, Route } from 'react-router-dom'
 
-import FixedNavagation from './Navagation'
-import Footer from './Footer'
-import Post from './Post'
-import Index from './Index'
-import About from './About'
-import Login from './Login'
+import FixedNavagation from './Navagation/Navagation.jsx'
+import Footer from './Footer/Footer.jsx'
+import Post from './Post/Post.jsx'
+import Index from './Index/Index.jsx'
+import About from './About/About.jsx'
+import Login from './Login/Login.jsx'
 
 class App extends React.Component {
     render() {

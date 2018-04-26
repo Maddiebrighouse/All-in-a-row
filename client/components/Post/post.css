@@ -1,0 +1,25 @@
+.container{
+    margin: 0 auto;
+    max-width: 800px;
+}
+.postfooter {
+    position: relative;
+}
+.nextbutton {
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+}
+.previousbutton {
+    position: absolute;
+    left: 10px;
+    font-size: 25px;
+}
+.navigation > ul > li > a, .nextbutton, .previousbutton, .sharebutton{
+    display: inline-flex;
+    color:#D85A93;
+    font-size: 200%;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "chunk",serif; 
+}

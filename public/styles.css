@@ -2,36 +2,13 @@
     width: 100%;
     
 }
-.container{
-    margin: 0 auto;
-    max-width: 800px;
-}
 
 font{
     font-family: "chunk",serif;
     font-style: normal;
     font-weight: 400;
 }
-.navigation{
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-}
-.navigation > ul{
-    padding-left: 0px;
-}
-.navigation > ul > li{
-    display: inline;
 
-}
-.navigation > ul > li > a, .nextbutton, .previousbutton, .sharebutton{
-    display: inline-flex;
-    color:#D85A93;
-    font-size: 200%;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: "chunk",serif; 
-}
 ul {
     list-style-type: none;
     
@@ -48,15 +25,7 @@ img{
     max-width:100%;
     max-height:100%;
 }
-.footer{
-	margin: 0 auto;
-	text-align: center;
-	display: inline;
-}
-.footer > hr{
-    max-width: 700px;
-    border-color: #0000001a;
-}
+
 hr{
     border-color: #0000001a;
     width: 100%;
@@ -64,19 +33,7 @@ hr{
 	margin-top: 10px;
 
 }
-.socialbuttoms {
-    margin: 0 auto;
-    text-align: center;
-}
-.socialbuttoms > a {
-    display: inline-flex;
-    padding: 0%;
 
-}
-.socialbuttoms > a > img {
-    height: 50%;
-    width: 50%;
-}
 h1{
     font-family: "chunk",serif;
     color:#df6b41;
@@ -89,36 +46,10 @@ p, time, span, h3{
     color: rgba(145,145,145,1);
     font-size: 20px;
 }
-.postfooter {
-    position: relative;
-}
-.nextbutton {
-    position: absolute;
-    right: 10px;
-    font-size: 25px;
-}
-.previousbutton {
-    position: absolute;
-    left: 10px;
-    font-size: 25px;
-}
-.indexcontainer{
-    margin: 0% auto;
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.postcontainer{
-	width: 300px;
-	height: 300px;
-    margin: 5px;
-}
+
+
 ::selection { 
     background-color:#df6b41be; 
     color: white;
 }
 
-.login {
-    text-align: center;
-}

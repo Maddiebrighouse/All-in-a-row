@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './navagation.css'
+
 const FixedNavagation = () => {
     return (
         <div className='navigation' >

@@ -7,20 +7,19 @@ const db = require('../db.js')
 router.get('/index', (req, res) => {
   db.getPosts()
     .then(posts => {
-      res.render('index', {posts})
-    }
-    )
+      res.json({posts})
+    })
     .catch(err => {
       res.status(500).send('DATABASE ERROR:' + err.message)
     })
 })
 
+// get post by id
 router.get('/posts/:id', (req, res) => {
-    db.getMongoPost(req.params.id)
-      .then(post => res.json({post}))
-      .catch(err => {
-        res.status(500).send('DATABASE ERROR: ' + err.message)
-      })
-  })
-
+  db.getPost(req.params.id)
+    .then(post => res.json({post}))
+    .catch(err => {
+      res.status(500).send('DATABASE ERROR: ' + err.message)
+    })
+})
 module.exports = router

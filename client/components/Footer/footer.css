@@ -1,0 +1,22 @@
+.footer{
+	margin: 0 auto;
+	text-align: center;
+	display: inline;
+}
+.footer > hr{
+    max-width: 700px;
+    border-color: #0000001a;
+}
+.socialbuttoms {
+    margin: 0 auto;
+    text-align: center;
+}
+.socialbuttoms > a {
+    display: inline-flex;
+    padding: 0%;
+
+}
+.socialbuttoms > a > img {
+    height: 50%;
+    width: 50%;
+}
