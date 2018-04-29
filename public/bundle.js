@@ -25542,19 +25542,24 @@ var Index = function (_React$Component) {
       return this.state.posts.map(function (post) {
         return _react2.default.createElement(
           _reactRouterDom.Link,
-          { to: '/post/' + post.id, className: 'postCont', key: post.id },
+          { to: '/post/' + post.id, key: post.id },
           _react2.default.createElement(
             'div',
-            { className: 'post' },
+            { className: 'postcontainer' },
+            _react2.default.createElement('img', { src: 'https://static1.squarespace.com/static/53608f78e4b0f06595c2c1ba/t/5a020a43419202cb70451e0e/1510083769972/Company+Of+Strangers+Nails-394.jpg?format=1500w', alt: 'post image' }),
             _react2.default.createElement(
-              'h3',
+              'div',
               null,
-              post.title
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              post.content
+              _react2.default.createElement(
+                'h1',
+                null,
+                post.title
+              ),
+              _react2.default.createElement(
+                'time',
+                { dateTime: '' + post.date },
+                post.date
+              )
             )
           )
         );
