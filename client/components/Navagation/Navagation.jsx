@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './navagation.css'
+import './navagation.scss'
 
 const FixedNavagation = () => {
     return (

@@ -4,7 +4,7 @@ import { HashRouter as Router, Route } from 'react-router-dom'
 import FixedNavagation from './Navagation/Navagation.jsx'
 import Footer from './Footer/Footer.jsx'
 import Post from './Post/Post.jsx'
-import Index from './Index/Index.jsx'
+import AllPosts from './Index/AllPosts.jsx'
 import About from './About/About.jsx'
 import Login from './Login/Login.jsx'
 
@@ -20,7 +20,7 @@ class App extends React.Component {
                         </a>
                     </div>
                     <FixedNavagation />
-                    <Route path='/index' component={Index} />
+                    <Route path='/index' component={AllPosts} />
                     <Route exact path='/' component={Post} />
                     <Route path='/about' component={About} />
                     <Route exact path='/login' component={Login} />
