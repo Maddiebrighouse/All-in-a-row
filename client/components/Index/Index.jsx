@@ -2,7 +2,7 @@ import React from 'react'
 import request from 'superagent'
 import {Link} from 'react-router-dom'
 
-import './index.css'
+import './index.scss'
 
 class Index extends React.Component {
     constructor (props) {
