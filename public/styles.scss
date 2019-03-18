@@ -1,55 +1,60 @@
-.header{
+.header {
     width: 100%;
-    
+
 }
 
-font{
-    font-family: "chunk",serif;
+font {
+    font-family: "chunk", serif;
     font-style: normal;
     font-weight: 400;
 }
 
 ul {
     list-style-type: none;
-    
+
 }
 
 a {
     text-decoration: none;
 }
-p > a{
+
+p>a {
     color: #D85A93;
     padding: 0%;
 }
-img{
-    max-width:100%;
-    max-height:100%;
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-hr{
+hr {
     border-color: #0000001a;
     width: 100%;
     margin-bottom: 50px;
-	margin-top: 10px;
+    margin-top: 10px;
 
 }
 
-h1{
-    font-family: "chunk",serif;
-    color:#df6b41;
+h1 {
+    font-family: "chunk", serif;
+    color: #df6b41;
     font-size: -webkit-xxx-large;
     margin-bottom: 0px;
 
 }
-p, time, span, h3{
+
+p,
+time,
+span,
+h3 {
     font-family: 'Dosis', sans-serif;
-    color: rgba(145,145,145,1);
+    color: rgba(145, 145, 145, 1);
     font-size: 20px;
 }
 
 
-::selection { 
-    background-color:#df6b41be; 
+::selection {
+    background-color: #df6b41be;
     color: white;
 }
-
