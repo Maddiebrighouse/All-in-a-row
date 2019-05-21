@@ -2,7 +2,7 @@ import React from 'react'
 
 import { login } from '../../utils/loginApi'
 import { removeUser } from '../../utils/auth'
-import './login.scss'
+import './login.css'
 class Login extends React.Component {
     constructor() {
         super()

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Index from './Index'
-import './index.scss'
+import './index.css'
 
 const AllPosts = () => {
     return (

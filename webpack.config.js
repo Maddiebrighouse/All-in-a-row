@@ -14,8 +14,8 @@ module.exports = {
     //   loader: 'style-loader!css-loader'
     // }],
     rules: [{
-        test: /\.scss$/,
-        // /\.css$|\.scss$|\.sass$/,
+        test: /\.css$/,
+        // |\.scss$|\.sass$/,
         use: [{
             loader: 'style-loader'
           },
@@ -24,9 +24,7 @@ module.exports = {
           },
           {
             loader: 'sass-loader',
-            options: {
-              implementation: require("sass")
-            }
+            
           }
         ]
       },

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './post.scss'
+import './post.css'
 
 class Post extends React.Component {
     constructor() {
