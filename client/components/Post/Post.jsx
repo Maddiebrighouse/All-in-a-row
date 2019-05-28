@@ -16,6 +16,8 @@ class Post extends React.Component {
     //         })
     //       })
     //   }
+
+    // TODO Pull conent/info from database. 
     render() {
         return (
             <div className='container'>
@@ -25,11 +27,6 @@ class Post extends React.Component {
                     <hr></hr>
                 </div>
                 <div className='postbody'>
-                    <img src="https://static1.squarespace.com/static/53608f78e4b0f06595c2c1ba/t/59f3928027ef2ddff5c3ebd9/1509135066024/INSTAPHOTOGSFW-2.jpg?format=original"
-                        alt="photo of madeleine" />
-                    <p>
-                        Stuff and content. With some links to designers and other shit.
-                </p>
                     <img src="http://res.cloudinary.com/all-in-a-row/image/upload/v1517462779/IMG_2747_qohud8.jpg" alt="Photo of me" />
                     <div>
                         <p>
