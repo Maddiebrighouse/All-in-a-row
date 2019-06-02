@@ -24,6 +24,7 @@ module.exports = {
           const db = client.db('AllInARow')
           return db.collection('Posts')
             .find(values)
+            .sort({post_date:-1})
             .toArray()
             .then(output => output)
             .then((output) => {
@@ -33,18 +34,31 @@ module.exports = {
         })
     },
 
-    getPost: (values) => {
+    // getPost: (values) => {
+    //     return MongoClient.connect(uri)
+    //       .then(client => {
+    //         const db = client.db('AllInARow')
+    //         return db.collection('Posts')
+    //           .find(values)
+    //           .toArray()
+    //           .then(output => output)
+    //           .then((output) => {
+    //             client.close()
+    //             return output
+    //           })
+    //       })
+    //   },
+
+      getPost: (id) => {
         return MongoClient.connect(uri)
-          .then(client => {
-            const db = client.db('AllInARow')
-            return db.collection('Posts')
-              .find(values.posts[0].post_id)
-              .toArray()
-              .then(output => output)
-              .then((output) => {
-                client.close()
-                return output
-              })
+          .then((err, client) => {
+          if (err) alert('error:', err.message)
+          const collection = client.db('AllInARow').collection('Posts')
+          collection.find({'post_id': id}).toArray((err, post) => {
+            if (err) alert('error:', err.message)
+            return post
           })
+          client.close()
+        })
       }
 }

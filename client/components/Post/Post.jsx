@@ -15,6 +15,12 @@ class Post extends React.Component {
               post: res.body
             })
           })
+          .catch(err => {
+            this.setState({
+              post:{},
+              err: err
+            })
+          })
       }
 
     // TODO Pull conent/info from database. 
