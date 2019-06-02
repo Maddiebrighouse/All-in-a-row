@@ -7,15 +7,15 @@ class Post extends React.Component {
         super()
         this.state = {}
     }
-    //   componentDidMount () {
-    //     request
-    //       .get(`api/v1/posts/${this.props.match.params.id}`)
-    //       .then(res => {
-    //         this.setState({
-    //           post: res.body
-    //         })
-    //       })
-    //   }
+      componentDidMount () {
+        request
+          .get(`api/v1/posts/${this.props.match.params.id}`)
+          .then(res => {
+            this.setState({
+              post: res.body
+            })
+          })
+      }
 
     // TODO Pull conent/info from database. 
     render() {
