@@ -1,8 +1,9 @@
-import React from 'react'
-import request from 'superagent'
-import {Link} from 'react-router-dom'
+import React from 'react';
+import request from 'superagent';
+import {Link} from 'react-router-dom';
+import Moment from 'react-moment';
 
-import './index.css'
+import './index.css';
 
 class Index extends React.Component {
     constructor (props) {
@@ -27,10 +28,9 @@ class Index extends React.Component {
                 <div className='postcontainer'>
                 <img src="https://static1.squarespace.com/static/53608f78e4b0f06595c2c1ba/t/5a020a43419202cb70451e0e/1510083769972/Company+Of+Strangers+Nails-394.jpg?format=1500w" alt="post image"/>
                   <div>
-                  <h1>{post.title}</h1>
-                  <time dateTime={`${post.post_date}`}>{post.post_date}</time>
+                    <h1>{post.title}</h1>
+                    <Moment format="D MMM YYYY" withTitle>{post.post_date}</Moment>                  </div>
                   </div>
-                </div>
               </Link>
             )
           }
