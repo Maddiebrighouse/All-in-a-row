@@ -34,6 +34,7 @@
     "mongodb": "^3.2.6",
     "node-pre-gyp": "^0.12.0",
     "node-sass": "^4.11.0",
+    "prop-types": "^15.7.2",
     "react-router": "^5.0.0",
     "sass": "^1.17.3",
     "sass-loader": "^7.1.0",
