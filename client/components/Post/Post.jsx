@@ -8,8 +8,7 @@ class Post extends React.Component {
         this.state = {}
     }
       componentDidMount () {
-        request
-          .get(`api/v1/posts/${this.props.match.params.id}`)
+        request.get(`api/v1/posts/${this.props.match.params.id}`)
           .then(res => {
             this.setState({
               post: res.body
@@ -23,7 +22,7 @@ class Post extends React.Component {
           })
       }
 
-    // TODO Pull conent/info from database. 
+    // TODO Pull content/info from database. 
     render() {
         return (
             <div className='container'>
