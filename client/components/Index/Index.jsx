@@ -5,6 +5,8 @@ import Moment from 'react-moment';
 
 import './index.css';
 
+// remove if not have valide date
+// max per page and next page
 class Index extends React.Component {
     constructor (props) {
         super(props)
@@ -24,7 +26,7 @@ class Index extends React.Component {
         return (
           this.state.posts.map(post => {
             return (
-              <Link to={`/post/${post.post_id}`} key={post.post_id}>
+              <Link to={post.path} key={post.post_id}>
                 <div className='postcontainer'>
                 <img src="https://static1.squarespace.com/static/53608f78e4b0f06595c2c1ba/t/5a020a43419202cb70451e0e/1510083769972/Company+Of+Strangers+Nails-394.jpg?format=1500w" alt="post image"/>
                   <div>
