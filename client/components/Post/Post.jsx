@@ -1,12 +1,17 @@
 import React from 'react'
+import request from 'superagent'
+import bodyParser from 'body-parser'
 
 import './post.css'
 
 class Post extends React.Component {
-    constructor() {
-        super()
-        this.state = {}
+  constructor (props) {
+    super(props)
+    this.state = {
+      post: {},
+      err:''
     }
+  }
       componentDidMount () {
         request.get(`api/v1/posts/${this.props.match.params.id}`)
           .then(res => {
@@ -27,17 +32,14 @@ class Post extends React.Component {
         return (
             <div className='container'>
                 <div className='postheader'>
-                    <h1>Header</h1>
-                    <time dateTime="2018-02-4">February 9, 2018</time>
+                <h1>{post.title}</h1>
+                <Moment format="DD MMM YYYY" withTitle>{post.post_date}</Moment> 
                     <hr></hr>
                 </div>
                 <div className='postbody'>
                     <img src="http://res.cloudinary.com/all-in-a-row/image/upload/v1517462779/IMG_2747_qohud8.jpg" alt="Photo of me" />
                     <div>
-                        <p>
-                            some more text linked to the picture.
-                        <a href="/">styling this link</a>
-                        </p>
+                        <html>{post.content}</html>
                     </div>
                     <div className='tags'>
                         <span>Tags will go here</span>

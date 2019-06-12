@@ -19,30 +19,27 @@ module.exports = {
             })
         })
     },
-
-    // getPost: (values) => {
-    //     return MongoClient.connect(uri)
-    //       .then(client => {
-    //         const db = client.db('AllInARow')
-    //         return db.collection('Posts')
-    //           .find(values)
-    //           .toArray()
-    //           .then(output => output)
-    //           .then((output) => {
-    //             client.close()
-    //             return output
-    //           })
-    //       })
-    //   },
-
       getPost: (id) => {
-        return MongoClient.connect(uri)
+        return MongoClient.connect(uri, {useNewUrlParser: true})
           .then((err, client) => {
           if (err) alert('error:', err.message)
           const collection = client.db('AllInARow').collection('Posts')
           collection.find({'post_id': id}).toArray((err, post) => {
             if (err) alert('error:', err.message)
             return post
+          })
+          client.close()
+        })
+      },
+
+      getCategory: (category) => {
+        return MongoClient.connect(uri, {useNewUrlParser: true})
+          .then((err, client) => {
+          if (err) alert('error:', err.message)
+          const collection = client.db('AllInARow').collection('Posts')
+          collection.find({'category': category}).toArray((err, post) => {
+            if (err) alert('error:', err.message)
+            return category
           })
           client.close()
         })

@@ -11,11 +11,13 @@ class Index extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
-          posts: []
+          posts: {},
+          err:''
         }
       }
       componentDidMount () {
-        request.get('api/v1/posts')
+        const { category } = this.props.match.params
+        request.get(`api/v1/posts/${category}`)
           .then(res => {
             this.setState({
               posts: res.body.posts

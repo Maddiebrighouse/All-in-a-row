@@ -1,14 +1,14 @@
-import React from 'react'
+// import React from 'react'
 
-import Index from './Index'
-import './index.css'
+// import Index from './Index'
+// import './index.css'
 
-const AllPosts = () => {
-    return (
-        <div className='indexcontainer'>
-        <Index />
-        </div>
-    )
-}
+// const AllPosts = () => {
+//     return (
+//         <div className='indexcontainer'>
+//         <Index />
+//         </div>
+//     )
+// }
 
-export default AllPosts
+// export default AllPosts

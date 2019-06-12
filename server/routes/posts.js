@@ -14,6 +14,14 @@ router.get('/posts', (req, res) => {
     })
 })
 
+router.get('/posts/category', (req, res) => {
+    db.getCategory(req.params.category)
+      .then(post => res.json({post}))
+      .catch(err => {
+        res.status(500).send('DATABASE ERROR: ' + err.message)
+      })
+  })
+
 // get post by id
 router.get('/posts/:id', (req, res) => {
   db.getPost(req.params.id)
@@ -22,4 +30,5 @@ router.get('/posts/:id', (req, res) => {
       res.status(500).send('DATABASE ERROR: ' + err.message)
     })
 })
+
 module.exports = router

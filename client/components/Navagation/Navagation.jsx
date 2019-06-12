@@ -1,5 +1,6 @@
-import React from 'react'
-
+import React from 'react';
+import {Link} from 'react-router-dom';
+ 
 import './navagation.css'
 
 const FixedNavagation = () => {
@@ -7,7 +8,8 @@ const FixedNavagation = () => {
         <div className='navigation' >
         <ul>
             <li>
-                <a href="/fashion">Fashion</a>
+            <Link to="/fashion">Fashion</Link>
+                {/* <a href="/fashion">Fashion</a> */}
             </li>
             <li>
                 <a href="/music">Music</a>
