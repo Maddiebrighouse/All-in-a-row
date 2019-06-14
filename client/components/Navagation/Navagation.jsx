@@ -8,17 +8,16 @@ const FixedNavagation = () => {
         <div className='navigation' >
         <ul>
             <li>
-            <Link to="/fashion">Fashion</Link>
-                {/* <a href="/fashion">Fashion</a> */}
+                <Link to="/fashion">Fashion</Link>
             </li>
             <li>
-                <a href="/music">Music</a>
+                 <Link to="/music">Music</Link>
             </li>
             <li>
-                <a href="/art">Art</a>
+                <Link to="/art">Art</Link>
             </li>
             <li>
-                <a href="/index">People</a>
+                <Link to="/people">People</Link>
             </li>
             <li>
                 <a href="/about">About</a>

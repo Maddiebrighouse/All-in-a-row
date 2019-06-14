@@ -14,9 +14,9 @@ router.get('/posts', (req, res) => {
     })
 })
 
-router.get('/posts/category', (req, res) => {
+router.get('/posts/:category', (req, res) => {
     db.getCategory(req.params.category)
-      .then(post => res.json({post}))
+      .then(posts => res.json({posts}))
       .catch(err => {
         res.status(500).send('DATABASE ERROR: ' + err.message)
       })

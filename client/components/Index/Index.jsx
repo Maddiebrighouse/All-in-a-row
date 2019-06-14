@@ -11,7 +11,7 @@ class Index extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
-          posts: {},
+          posts: [],
           err:''
         }
       }
@@ -22,9 +22,11 @@ class Index extends React.Component {
             this.setState({
               posts: res.body.posts
             })
+            console.log(res);
           })
       }
       render () {
+        console.log(this.state.posts);
         return (
           this.state.posts.map(post => {
             return (

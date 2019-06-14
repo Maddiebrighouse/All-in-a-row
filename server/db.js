@@ -34,14 +34,16 @@ module.exports = {
 
       getCategory: (category) => {
         return MongoClient.connect(uri, {useNewUrlParser: true})
-          .then((err, client) => {
-          if (err) alert('error:', err.message)
-          const collection = client.db('AllInARow').collection('Posts')
-          collection.find({'category': category}).toArray((err, post) => {
-            if (err) alert('error:', err.message)
-            return category
+          .then((client) => {
+          const db = client.db('AllInARow')
+          return db.collection('Posts')
+          .find({'category': `${category}`})
+          .toArray()
+          .then(categoryOutput => categoryOutput)
+            .then((categoryOutput) => {
+              client.close();
+              return categoryOutput;
+            })
           })
-          client.close()
-        })
-      }
-}
+        }
+  }
