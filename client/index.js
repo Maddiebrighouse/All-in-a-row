@@ -1,10 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './components/App'
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <App />,
     document.getElementById('app')
-  )
-})
+  );
+});

@@ -1,33 +1,33 @@
-import React from 'react'
+import React from 'react';
 
-import { login } from '../../utils/loginApi'
-import { removeUser } from '../../utils/auth'
-import './login.css'
+import { login } from '../../utils/loginApi';
+import { removeUser } from '../../utils/auth';
+import './login.css';
 class Login extends React.Component {
     constructor() {
-        super()
+        super();
         this.state = {
             username: '',
             password: ''
-        }
-        this.handleChange = this.handleChange.bind(this)
-        this.handleClick = this.handleClick.bind(this)
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     handleChange(e) {
         this.setState({
             ...this.state,
             [e.target.name]: e.target.value
-        })
+        });
     }
 
     handleClick() {
-        const { username, password } = this.state
+        const { username, password } = this.state;
         const creds = {
             username: username.trim(),
             password: password.trim()
-        }
-        login('post', '/api/v1/signin', creds)
+        };
+        login('post', '/api/v1/signin', creds);
     }
 
     render() {
@@ -45,8 +45,8 @@ class Login extends React.Component {
                 <button onClick={this.handleClick}>Login</button>
                 <button onClick={removeUser}>Logout</button>
             </div>
-        )
+        );
     }
 }
 
-export default Login
+export default Login;

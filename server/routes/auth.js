@@ -1,33 +1,33 @@
-const express = require('express')
-require('dotenv').config()
+const express = require('express');
+require('dotenv').config();
 
 // const verifyJwt = require('express-jwt')
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 
-const auth = require('../lib/auth')
+const auth = require('../lib/auth');
 
-const router = express.Router()
-router.use(bodyParser.json())
+const router = express.Router();
+router.use(bodyParser.json());
 
 router.post('/signin',
     signIn,
     auth.issueJwt
-)
+);
 
 function signIn(req, res, next) {
-    const user = req.body.username
-    const pass = req.body.password
+    const user = req.body.username;
+    const pass = req.body.password;
     if (user === process.env.USERNAME && pass === process.env.PASSWORD) {
-        next()
+        next();
     } else {
-        invalidCredentials(res)
+        invalidCredentials(res);
     }
 }
 
 function invalidCredentials(res) {
     res.status(400).send({
         errorType: 'INVALID_CREDENTIALS'
-    })
+    });
 }
 
 // express-jwt middleware lets us use a function as the secret,
@@ -51,4 +51,4 @@ function invalidCredentials(res) {
 //   })
 // })
 
-module.exports = router
+module.exports = router;

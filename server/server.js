@@ -15,4 +15,4 @@ server.use('/api/v1/', auth);
 server.use('/api/v1/', posts);
 // server.use('/api/v1/', category);
 
-module.exports = server
+module.exports = server;

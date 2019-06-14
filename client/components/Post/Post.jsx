@@ -1,30 +1,32 @@
-import React from 'react'
-import request from 'superagent'
-import bodyParser from 'body-parser'
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
+import React from 'react';
+import request from 'superagent';
+import bodyParser from 'body-parser';
 
-import './post.css'
+import './post.css';
 
 class Post extends React.Component {
   constructor (props) {
-    super(props)
+    super(props);
     this.state = {
       post: {},
       err:''
-    }
+    };
   }
       componentDidMount () {
         request.get(`api/v1/posts/${this.props.match.params.id}`)
           .then(res => {
             this.setState({
               post: res.body
-            })
+            });
           })
           .catch(err => {
             this.setState({
               post:{},
               err: err
-            })
-          })
+            });
+          });
       }
 
     // TODO Pull content/info from database. 
@@ -53,8 +55,8 @@ class Post extends React.Component {
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
 
-export default Post
+export default Post;
