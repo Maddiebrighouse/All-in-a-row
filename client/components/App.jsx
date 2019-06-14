@@ -21,7 +21,7 @@ class App extends React.Component {
                     </div>
                     <FixedNavagation />
                     <div className='indexcontainer'>
-                        <Route path='/:category' component={Index} />
+                        <Route exact path='/:category' component={Index} />
                     </div>
                     <Route exact path='/post/:id' component={Post} />
                     <Route path='/about' component={About} />

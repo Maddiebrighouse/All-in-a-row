@@ -1,5 +1,6 @@
-import React from 'react'
-import './about.css'
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import './about.css';
 const About = () => {
     return (
         <div className='container'>
@@ -41,7 +42,7 @@ const About = () => {
                     Would love to hear from you! 
                 </p>
         </div>
-    )
-}
+    );
+};
 
-export default About
+export default About;
