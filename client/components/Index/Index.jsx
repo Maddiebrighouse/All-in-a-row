@@ -22,11 +22,9 @@ class Index extends React.Component {
             this.setState({
               posts: res.body.posts
             })
-            console.log(res);
           })
       }
       render () {
-        console.log(this.state.posts);
         return (
           this.state.posts.map(post => {
             return (

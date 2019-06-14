@@ -1,12 +1,12 @@
-import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import FixedNavagation from './Navagation/Navagation.jsx'
-import Footer from './Footer/Footer.jsx'
-import Post from './Post/Post.jsx'
-import Index from './Index/Index.jsx'
-import About from './About/About.jsx'
-import Login from './Login/Login.jsx'
+import FixedNavagation from './Navagation/Navagation.jsx';
+import Footer from './Footer/Footer.jsx';
+import Post from './Post/Post.jsx';
+import Index from './Index/Index.jsx';
+import About from './About/About.jsx';
+import Login from './Login/Login.jsx';
 
 class App extends React.Component {
     render() {
@@ -20,7 +20,9 @@ class App extends React.Component {
                         </a>
                     </div>
                     <FixedNavagation />
-                    <Route path='/:category' component={Index} />
+                    <div className='indexcontainer'>
+                        <Route path='/:category' component={Index} />
+                    </div>
                     <Route exact path='/post/:id' component={Post} />
                     <Route path='/about' component={About} />
                     <Route exact path='/login' component={Login} />
