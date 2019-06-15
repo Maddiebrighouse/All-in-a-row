@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "node": true
     },
     "extends": "eslint:recommended",
     "globals": {
@@ -9,6 +10,8 @@ module.exports = {
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
         "ecmaFeatures": {
             "jsx": true
         },
@@ -20,5 +23,6 @@ module.exports = {
         "eslint-plugin-react"
     ],
     "rules": {
+        "semi": "error"
     }
 };

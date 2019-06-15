@@ -1,46 +1,42 @@
-import React from 'react'
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
+import React from 'react';
+import request from 'superagent';
+import Moment from 'react-moment';
 
-import './post.css'
+import './post.css';
 
 class Post extends React.Component {
-    constructor() {
-        super()
-        this.state = {}
-    }
+  constructor (props) {
+    super(props);
+    this.state = {
+      post: {},
+      err:'',
+      content: {}
+    };
+  }
       componentDidMount () {
-        request.get(`api/v1/posts/${this.props.match.params.id}`)
+        request.get(`/api/v1/posts/id/${this.props.match.params.post_id}`)
           .then(res => {
             this.setState({
-              post: res.body
-            })
-          })
-          .catch(err => {
-            this.setState({
-              post:{},
-              err: err
-            })
-          })
+              post: res.body.post[0]
+            });
+          });
       }
-
-    // TODO Pull content/info from database. 
+// TODO META TAGS 
+// TODO NEXT AND LAST POST
     render() {
+      var post = this.state.post;
         return (
             <div className='container'>
                 <div className='postheader'>
-                    <h1>Header</h1>
-                    <time dateTime="2018-02-4">February 9, 2018</time>
-                    <hr></hr>
+                <Moment format="DD MMM YYYY" withTitle>{post.post_date}</Moment> 
+                    <h1>{post.title}</h1>
                 </div>
                 <div className='postbody'>
-                    <img src="http://res.cloudinary.com/all-in-a-row/image/upload/v1517462779/IMG_2747_qohud8.jpg" alt="Photo of me" />
-                    <div>
-                        <p>
-                            some more text linked to the picture.
-                        <a href="/">styling this link</a>
-                        </p>
+                    <div dangerouslySetInnerHTML={{__html: post.content}}>
                     </div>
                     <div className='tags'>
-                        <span>Tags will go here</span>
                     </div>
                     <a className='sharebutton' href="/">Share/Might be button</a>
                     <div className='postfooter'>
@@ -51,8 +47,8 @@ class Post extends React.Component {
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
 
-export default Post
+export default Post;

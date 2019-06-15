@@ -58,3 +58,10 @@ h3 {
     background-color: #df6b41be;
     color: white;
 }
+.indexcontainer{
+    margin: 0% auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
