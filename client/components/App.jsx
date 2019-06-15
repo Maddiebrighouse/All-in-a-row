@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -23,14 +24,14 @@ class App extends React.Component {
                     <div className='indexcontainer'>
                         <Route exact path='/:category' component={Index} />
                     </div>
-                    <Route exact path='/post/:id' component={Post} />
+                    <Route path='/post/:post_id' component={Post} />
                     <Route path='/about' component={About} />
                     <Route exact path='/login' component={Login} />
                     <Footer />
                 </div>
             </Router>
-        )
+        );
     }
 }
 
-export default App
+export default App;

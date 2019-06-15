@@ -19,16 +19,19 @@ module.exports = {
             });
         });
     },
-      getPost: (id) => {
+      getPost: (post_id) => {
+        var id = parseInt(post_id);
         return MongoClient.connect(uri, {useNewUrlParser: true})
-          .then((err, client) => {
-          if (err) alert('error:', err.message);
-          const collection = client.db('AllInARow').collection('Posts');
-          collection.find({'post_id': id}).toArray((err, post) => {
-            if (err) alert('error:', err.message);
-            return post;
+          .then((client) => {
+          const db = client.db('AllInARow');
+          return db.collection('Posts')
+          .find({'post_id': id})
+          .toArray()
+          .then(postOutput => postOutput)
+          .then((postOutput) => {
+            client.close();
+            return postOutput;
           });
-          client.close();
         });
       },
 
